@@ -1,0 +1,6 @@
+<h1>Se connecnter</h1>
+
+<%= simple_form_for :session, url: session_path do |f| %>
+  <%= f.input :username %>
+  <%= f.button :submit, 'Se connecter' %>
+<%= end %>
