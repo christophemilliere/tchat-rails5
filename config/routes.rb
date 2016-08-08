@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  get 'sessions/create'
 
-  get 'sessions/new'
-
-get '/demo', to: 'messages#demo'
+  resources :sessions, only: [:new, :create]
+  get '/demo', to: 'messages#demo'
 
   root 'messages#index'
 
